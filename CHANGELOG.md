@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.5](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.4...v1.1.5) (2024-04-02)
+
+
+### Bug Fixes
+
+* fix bug ([eb1c151](https://github.com/onchainyaotoshi/nftoshis-gating/commit/eb1c15123d113c19bb606c217b545964c7da4fb3))
+
 ## [1.1.4](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.3...v1.1.4) (2024-04-02)
 
 
