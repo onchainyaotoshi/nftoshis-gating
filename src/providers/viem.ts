@@ -1,7 +1,6 @@
 import { createPublicClient, http } from 'viem'
 import { base } from 'viem/chains'
-import { IEthServiceProvider, EthAddress } from '../types/types';
-import Contract from '../utils/contract';
+import Contract, { IEthServiceProvider, EthAddress }  from '../utils/contract';
 
 export const publicClient = createPublicClient({
     chain: base,
