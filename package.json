@@ -1,0 +1,57 @@
+{
+  "name": "nftoshis-gating",
+  "version": "0.1.0",
+  "description": "If you're developing utilities around NFToshis, feel free to use it",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "test": "vitest",
+    "release": "git add * && git-cz && git pull origin && git push origin"
+  },
+  "keywords": [
+    "nftoshis",
+    "token-gating",
+    "nft",
+    "web3",
+    "nft-gating",
+    "toshi",
+    "base-chain",
+    "base"
+  ],
+  "engines": {
+    "npm": ">=8.19.2",
+    "node": ">=18.12.1"
+  },
+  "author": "yaotoshi",
+  "license": "MIT",
+  "dependencies": {
+    "@quicknode/sdk": "^2.2.2",
+    "commander": "^10.0.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/npm": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^16.4.5",
+    "semantic-release": "^21.0.2",
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
+  }
+}
