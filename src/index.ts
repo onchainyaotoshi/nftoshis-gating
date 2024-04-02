@@ -17,3 +17,9 @@ export default class Nftoshis{
         return balance > 0;
     }
 }
+
+export { 
+    QuickNodeServiceProvider, 
+    EthAddress, 
+    IEthServiceProvider
+}
