@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.0.2...v1.1.0) (2024-04-02)
+
+
+### Features
+
+* make it easy to import ([5a3e965](https://github.com/onchainyaotoshi/nftoshis-gating/commit/5a3e9651981521388c392b1742a041d63e3d6a27))
+
 ## [1.0.2](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.0.1...v1.0.2) (2024-04-02)
 
 
