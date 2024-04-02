@@ -72,7 +72,7 @@ const nftoshis = new Nftoshis(new CustomServiceProvider());
 const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 ```
 
-### cjs
+### cjs 
 
 ```javascript
 async function loadModule() {
