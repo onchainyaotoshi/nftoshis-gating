@@ -37,7 +37,7 @@ const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 
 ### Viem SDK
 
-it use basescan API
+it use mainnet [basescan](basescan.org) API
 
 ```javascript
 import Nftoshis, {ViemServiceProvider} from "nftoshis-gating";
