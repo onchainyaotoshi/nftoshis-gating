@@ -1,6 +1,6 @@
 {
   "name": "nftoshis-gating",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "If you're developing utilities around NFToshis, feel free to use it",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
