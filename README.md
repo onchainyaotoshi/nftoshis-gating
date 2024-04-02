@@ -30,7 +30,7 @@ Here is [QuickNode](https://www.quicknode.com/)
 ```javascript
 import Nftoshis, {QuickNodeServiceProvider} from "nftoshis-gating";
 
-const nftoshis = new Nftoshis(QuickNodeServiceProvider(QUICKNODE_HTTPS_URL));
+const nftoshis = new Nftoshis(new QuickNodeServiceProvider(QUICKNODE_HTTPS_URL));
 const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 
 ```
@@ -42,7 +42,7 @@ it use basescan API
 ```javascript
 import Nftoshis, {ViemServiceProvider} from "nftoshis-gating";
 
-const nftoshis = new Nftoshis(ViemServiceProvider());
+const nftoshis = new Nftoshis(new ViemServiceProvider());
 const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 
 ```
@@ -66,7 +66,7 @@ and then you can use it:
 ```javascript
 import Nftoshis from "nftoshis-gating";
 
-const nftoshis = new Nftoshis(CustomServiceProvider());
+const nftoshis = new Nftoshis(new CustomServiceProvider());
 const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 ```
 
