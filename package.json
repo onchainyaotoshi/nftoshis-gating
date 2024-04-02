@@ -36,7 +36,8 @@
   "license": "MIT",
   "dependencies": {
     "@quicknode/sdk": "^2.2.2",
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "viem": "^2.9.6"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
