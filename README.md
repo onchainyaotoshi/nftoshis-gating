@@ -23,7 +23,9 @@ To use NFToshis Gating in your project, import it and utilize its functions as n
 
 For now, it only support 2 service provider.
 
-### QuickNode SDK
+### ES6
+
+#### QuickNode SDK
 
 Here is [QuickNode](https://www.quicknode.com/)
 
@@ -35,7 +37,7 @@ const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 
 ```
 
-### Viem SDK
+#### Viem SDK
 
 it use mainnet [basescan](basescan.org) API
 
@@ -47,7 +49,7 @@ const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
 
 ```
 
-### Custom Service Provider SDK
+#### Custom Service Provider SDK
 
 You can implement your custom service provider and provide additional functionality. Below is an example of how you can create a custom service provider using the `IEthServiceProvider` interface provided by NFToshis Gating:
 
@@ -68,6 +70,27 @@ import Nftoshis from "nftoshis-gating";
 
 const nftoshis = new Nftoshis(new CustomServiceProvider());
 const isHolder = await nftoshis.isHolder(USER_WALLET_ADDRESS);
+```
+
+### cjs
+
+```javascript
+async function loadModule() {
+    return await import('nftoshis-gating');
+}
+
+(async()=>{
+    const Nftoshis = await loadModule();
+
+    const a = new Nftoshis.default(new Nftoshis.QuickNodeServiceProvider(QUICKNODE_HTTPS_URL));
+
+    console.log("a",await a.isHolder(USER_WALLET_ADDRESS));
+
+    const b = new Nftoshis.default(new Nftoshis.ViemServiceProvider());
+
+    console.log("b",await b.isHolder(USER_WALLET_ADDRESS));
+})();
+
 ```
 
 ## Contributing
