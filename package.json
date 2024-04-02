@@ -14,9 +14,7 @@
     }
   },
   "scripts": {
-    "start": "ts-node src/index.ts",
     "build": "tsc",
-    "dev": "nodemon src/index.ts",
     "test": "vitest",
     "release": "git add * && git-cz && git pull origin && git push origin"
   },
