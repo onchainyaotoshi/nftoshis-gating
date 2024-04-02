@@ -1,9 +1,9 @@
-import Contract, { EthAddress, IEthServiceProvider } from './utils/contract';
+import Contract, { EthAddress, IEthServiceProvider } from './utils/contract.js';
 
-import QuickNodeServiceProvider from './providers/quick-node';
-import ViemServiceProvider from './providers/viem';
+import QuickNodeServiceProvider from './providers/quick-node.js';
+import ViemServiceProvider from './providers/viem.js';
 
-class Nftoshis{
+export default class Nftoshis{
     public static CONTRACT = Contract;
 
     private serviceProvider: IEthServiceProvider;
@@ -17,8 +17,6 @@ class Nftoshis{
         return balance > 0;
     }
 }
-
-export default Nftoshis
 
 export { 
     QuickNodeServiceProvider, 

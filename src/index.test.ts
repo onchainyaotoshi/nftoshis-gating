@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import Nftoshis, {QuickNodeServiceProvider, ViemServiceProvider, EthAddress} from './index';
+import {Nftoshis, QuickNodeServiceProvider, ViemServiceProvider, EthAddress} from './index';
 
 import dotenv from 'dotenv';
 dotenv.config();

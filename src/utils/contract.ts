@@ -1,4 +1,4 @@
-import NftoshisAbi from '../abi/nftoshis.json';
+import NftoshisAbi from '../abi/nftoshis.json' assert { type: 'json' };
 
 export type EthAddress = `0x${string}`;
 

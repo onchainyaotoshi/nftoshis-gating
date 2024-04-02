@@ -1,5 +1,5 @@
 import { Core } from '@quicknode/sdk';
-import Contract,  { IEthServiceProvider, EthAddress } from '../utils/contract';
+import Contract,  { IEthServiceProvider, EthAddress } from '../utils/contract.js';
 
 export default class QuickNodeServiceProvider implements IEthServiceProvider {
     private core: Core;

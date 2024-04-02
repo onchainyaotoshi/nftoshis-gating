@@ -14,8 +14,9 @@
     }
   },
   "scripts": {
+    "start": "node ./index.js",
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "tsc --resolveJsonModule",
     "test": "vitest",
     "release": "git add * && git-cz && git pull origin && git push origin"
   },

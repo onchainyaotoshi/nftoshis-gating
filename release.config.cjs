@@ -27,10 +27,7 @@ module.exports = {
           [
             "package.json", 
             "CHANGELOG.md",
-            "src/**/*.js",
-            "src/**/*.d.ts",
-            "src/abi/**/*.json",
-            "!src/**/*.test.js"
+            "dist/**/*",
           ]
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
