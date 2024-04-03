@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.8](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.7...v1.1.8) (2024-04-03)
+
+
+### Performance Improvements
+
+* decrease package size ([133812c](https://github.com/onchainyaotoshi/nftoshis-gating/commit/133812cf2d4cfbd05875fc97607c640d9d27d7ad))
+
 ## [1.1.7](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.6...v1.1.7) (2024-04-02)
 
 
