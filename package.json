@@ -21,7 +21,7 @@
     "start": "node ./index.js",
     "prebuild": "rimraf dist",
     "build": "tsc --resolveJsonModule",
-    "test": "vitest run",
+    "test": "dotenv -e .env vitest run",
     "release": "git add * && git-cz && git pull origin && git push origin"
   },
   "keywords": [
@@ -63,6 +63,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.1",
     "rimraf": "^5.0.5",
     "semantic-release": "^21.0.2",
     "typescript": "^5.4.3",

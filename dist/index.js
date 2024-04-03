@@ -10,15 +10,35 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 import Contract from './utils/contract.js';
 import QuickNodeServiceProvider from './providers/quick-node.js';
 import ViemServiceProvider from './providers/viem.js';
+import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 class Nftoshis {
     constructor(serviceProvider = new QuickNodeServiceProvider(process.env.QUICKNODE_HTTPS_URL)) {
         this.serviceProvider = serviceProvider;
+        this.neynar = new NeynarAPIClient(process.env.NEYNAR_API_KEY);
     }
-    isHolder(userWalletAddress) {
+    isHolder(arg) {
         return __awaiter(this, void 0, void 0, function* () {
-            const balance = yield this.serviceProvider.balanceOf(userWalletAddress);
-            return balance > 0;
+            if (typeof arg === 'string') {
+                const balance = yield this.serviceProvider.balanceOf(arg);
+                return balance > 0;
+            }
+            else if (typeof arg === 'number') {
+                const res = yield this.neynar.lookupUserByFid(arg);
+                // @ts-ignore
+                const addresses = res.result.user.verifiedAddresses.eth_addresses;
+                for (let i = 0; i < addresses.length; i++) {
+                    const isVerify = yield this.isHolder(addresses[i]);
+                    if (isVerify) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+            throw new Error('Invalid argument type');
         });
+    }
+    getNeynarApiClient() {
+        return this.neynar;
     }
 }
 Nftoshis.CONTRACT = Contract;
