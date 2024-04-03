@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.2.2](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.2.1...v1.2.2) (2024-04-03)
+
+
+### Bug Fixes
+
+* fix bug BADENGINE ([386a57f](https://github.com/onchainyaotoshi/nftoshis-gating/commit/386a57fb7cc8adbd8b1b92a45c669c55f9775508))
+
 ## [1.2.1](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.2.0...v1.2.1) (2024-04-03)
 
 
