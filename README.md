@@ -17,11 +17,40 @@ You can install NFToshis Gating via npm:
 npm install nftoshis-gating
 ```
 
+## Environment Setup
+
+To run this project, create a `.env` file at the root with the following variables:
+
+- `QUICKNODE_HTTPS_URL`: HTTPS URL for QuickNode endpoint.
+- `NEYNAR_API_KEY`: API key for Neynar service.
+
+### Example `.env`
+
+```plaintext
+QUICKNODE_HTTPS_URL=https://your-node.quicknode.com
+NEYNAR_API_KEY=your-neynar-api-key
+```
+
+**Important: Do not commit the .env file to your repository. Ensure it's in your .gitignore.**
+
 ## Usage
 
 To use NFToshis Gating in your project, import it and utilize its functions as needed:
 
 For now, it only support 2 service provider.
+
+### Farcaster Frame
+
+This example demonstrates how to use the nftoshis-gating package to check if a user holds a token, given their Farcaster ID (FID). Ensure you have a .env file set up with the required environment variables before running the example.
+
+```javascript
+
+import Nftoshis from "nftoshis-gating";
+
+const nftoshis = new Nftoshis();
+const isHolder = await nftoshis.isHolder(FID);
+
+```
 
 ### ES6
 

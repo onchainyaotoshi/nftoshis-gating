@@ -21,7 +21,7 @@
     "start": "node ./index.js",
     "prebuild": "rimraf dist",
     "build": "tsc --resolveJsonModule",
-    "test": "vitest",
+    "test": "vitest run",
     "release": "git add * && git-cz && git pull origin && git push origin"
   },
   "keywords": [
@@ -48,6 +48,7 @@
   "author": "yaotoshi",
   "license": "MIT",
   "dependencies": {
+    "@neynar/nodejs-sdk": "^1.14.0",
     "@quicknode/sdk": "^2.2.2",
     "commander": "^10.0.1",
     "viem": "^2.9.6"
