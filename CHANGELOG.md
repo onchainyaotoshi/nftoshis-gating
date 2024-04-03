@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.7](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.6...v1.1.7) (2024-04-02)
+
+
+### Bug Fixes
+
+* add github link to npm ([daca877](https://github.com/onchainyaotoshi/nftoshis-gating/commit/daca877beb4dfdcace0fdb1f8db756ba8f1048ef))
+
 ## [1.1.6](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.5...v1.1.6) (2024-04-02)
 
 
