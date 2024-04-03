@@ -26,8 +26,10 @@ module.exports = {
         "assets": [
           [
             "package.json", 
+            "README.md",
+            "LICENSE",
             "CHANGELOG.md",
-            "dist/**/*",
+            "dist/**/*"
           ]
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
