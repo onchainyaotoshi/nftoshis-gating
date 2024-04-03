@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.2.0](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.9...v1.2.0) (2024-04-03)
+
+
+### Features
+
+* add farcaster frame support to check if a given fid is a nftoshis holder ([dc8ab70](https://github.com/onchainyaotoshi/nftoshis-gating/commit/dc8ab70812fa94ac349692bdf9d61c7f639b3df2))
+
 ## [1.1.9](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.8...v1.1.9) (2024-04-03)
 
 
