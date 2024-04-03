@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.2.1](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.2.0...v1.2.1) (2024-04-03)
+
+
+### Bug Fixes
+
+* remove vite.config.ts, wen run build, it mess with dist dir files ([7f87e28](https://github.com/onchainyaotoshi/nftoshis-gating/commit/7f87e28431dd3be9083d30e39a7833c6d8ea8db3))
+
 # [1.2.0](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.9...v1.2.0) (2024-04-03)
 
 
