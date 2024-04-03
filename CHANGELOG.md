@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.1.9](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.8...v1.1.9) (2024-04-03)
+
+
+### Bug Fixes
+
+* the consumer can't find the declaration type ([b7d20d5](https://github.com/onchainyaotoshi/nftoshis-gating/commit/b7d20d588c31ad8d27630f0380ac72c7185a719a))
+
 ## [1.1.8](https://github.com/onchainyaotoshi/nftoshis-gating/compare/v1.1.7...v1.1.8) (2024-04-03)
 
 
